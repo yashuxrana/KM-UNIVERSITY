@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@import "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+
+@layer base {
+  html, body, #root {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Academic Theme: Overriding navy primary with high-prestige Crimson Maroon */
+  .bg-\[\#0B2240\] {
+    background-color: #7D051B !important;
+  }
+  .text-\[\#0B2240\] {
+    color: #7D051B !important;
+  }
+  .border-\[\#0B2240\] {
+    border-color: #7D051B !important;
+  }
+
+  /* Override dark navy background with deep mahogany wine */
+  .bg-\[\#051121\] {
+    background-color: #4A030E !important;
+  }
+  .text-\[\#051121\] {
+    color: #FFFFF0 !important; /* Slightly warm white for perfect text contrast */
+  }
+  .border-\[\#051121\] {
+    border-color: #4A030E !important;
+  }
+
+  /* Override hover states of primary navy elements */
+  .hover\:bg-\[\#11315a\]:hover {
+    background-color: #5F0314 !important;
+  }
+  .hover\:bg-\[\#123158\]:hover {
+    background-color: #5F0314 !important;
+  }
+  .hover\:bg-\[\#15345a\]:hover {
+    background-color: #5F0314 !important;
+  }
+  .hover\:bg-\[\#142d4a\]:hover {
+    background-color: #5F0314 !important;
+  }
+
+  /* Premium Gradients */
+  .from-\[\#0B2240\] {
+    --tw-gradient-from: #7D051B !important;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(125, 5, 27, 0)) !important;
+  }
+  .to-\[\#051121\] {
+    --tw-gradient-to: #4A030E !important;
+  }
+
+  /* Secondary blue panel elements */
+  .bg-\[\#142d4a\] {
+    background-color: #630816 !important;
+  }
+  .bg-\[\#08172b\] {
+    background-color: #380108 !important;
+  }
+  .bg-\[\#0c203b\] {
+    background-color: #4A030E !important;
+  }
+  .hover\:bg-\[\#0c203b\]:hover {
+    background-color: #4A030E !important;
+  }
+  .border-\[\#142d4a\] {
+    border-color: #630816 !important;
+  }
+
+  /* Enhanced Warm Golden accents for dynamic contrast */
+  .text-\[\#C5A059\] {
+    color: #E2BA51 !important;
+  }
+  .bg-\[\#C5A059\] {
+    background-color: #E2BA51 !important;
+  }
+  .border-\[\#C5A059\] {
+    border-color: #E2BA51 !important;
+  }
+  .hover\:bg-\[\#ebd19d\]:hover {
+    background-color: #F8DFC3 !important;
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6.5px); }
+}
+
+.animate-shake {
+  animation: shake 0.35s ease-in-out;
+}
+

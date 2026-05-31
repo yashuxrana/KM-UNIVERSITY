@@ -1,0 +1,6 @@
+{
+  "name": "KMU Super Admin Console",
+  "description": "Super Admin portal to manage KM University announcements, notices, events, SEO compliance, physical campus area photos, and VIP guests directory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
